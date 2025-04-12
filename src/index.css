@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: "Outfit", system-ui;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #242424;
+  color: white;
+  background-repeat: no-repeat;
+}
+.logout {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+}
+.btn {
+  width: 13vw;
+}
+.loginpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+.labelTag {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+.container {
+  width: 80vw;
+  margin-inline: auto;
+}
+.heading {
+  font-size: 2.5rem;
+}
+input {
+  width: 80vw;
+  padding: 8px;
+  background-color: white;
+  color: #242424;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px transparent solid;
+  font-family: "Outfit", system-ui;
+}
+.loginbtn {
+  padding: 5px;
+  padding-block: 8px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s ease;
+}
+.loginbtn:hover {
+  cursor: pointer;
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+input:focus {
+  border: 1px black solid;
+  outline: none;
+}
+.flex {
+  display: flex;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.outerContainer {
+  padding-block: 20px;
+  position: fixed;
+  top: 0%;
+  background-color: rgb(29, 29, 29);
+  width: 100%;
+  box-shadow: black 1px 1px 8px;
+  z-index: 4;
+}
+.button {
+  font-family: "Outfit", system-ui;
+}
+.categoryBtn{
+  padding: 5px;
+  font-family: "Outfit";
+  font-size: 1rem;
+  position: fixed;
+  left: 5.2vw;
+  top: 190px;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  transition: 0.4s ease;
+}
+.categoryBtn:hover{
+  background-color:rgb(55, 55, 55) ;
+  color: white;
+}
+.categorySec{
+  width:105px;
+  height: 0;
+  background-color: white;
+  color: #242424;
+  position: fixed;
+  overflow: none;
+  display: none;
+  left: 5.2vw;
+  padding-inline: 5px;
+  top: 219px;
+}
+.categorySec>ul>li{
+  margin-block: 5px;
+  cursor: pointer;
+  list-style: none;
+}
+.categorySec>ul>li:hover{
+  background-color:rgb(55, 55, 55) ;
+  color: white;
+}
+.show{
+  height: auto;
+  display: unset;
+}
+.lists {
+  gap: 50px;
+}
+.underline {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+.underline:hover {
+  color: rgb(163, 163, 163);
+}
+.outerBlock {
+  margin-top: 110px;
+}
+.pageHead {
+  margin-bottom: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.prodArea {
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.prodCard {
+  flex-direction: column;
+  width: 300px;
+  justify-content: flex-start;
+  gap: 15px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+  color: black;
+}
+.addRemCart{
+  margin-bottom: 10px;
+}
+.total{
+  position: absolute;
+  right: 13.3vw;
+  top: 130px;
+}
+.prodData {
+  padding-inline: 8px;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.prodDesc {
+  word-wrap: break-word;
+}
+.prodImg {
+  height: 200px;
+  object-fit: contain;
+}
+.addCart {
+  padding: 3px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #242424;
+  color: white;
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  border: none;
+  transition: 0.4s ease;
+}
+.addCart:hover {
+  cursor: pointer;
+  color: #242424;
+  background: rgb(185, 185, 185);
+}
+.cartCard {
+  height: 160px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.amount > button {
+  padding-inline: 20px;
+  padding-block: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.amount > button:hover{
+  color: white;
+  background-color:  rgb(77, 77, 77);
+}
+.underline > span{
+  font-size: 0.7rem;
+  position: relative;
+  top: -10px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: red;
+  width: 10px !important;
+  height: 10px;
+}
+.cartProdImg {
+  object-fit: contain;
+  height: inherit;
+}
+.cartCard> div{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.cartProdTitle{
+  font-size: 1.9rem !important;
+  margin-bottom: 10px;
+}
+.cartProdData{
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+.cardArea{
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.prodArea > h3{
+  text-align: center;
+}
+.checkOut{
+  width: 100%;
+  padding-block: 10px;
+  font-size: 1rem;
+  font-family: "Outfit";
+  background-color: white;
+  border: none;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.checkOut:hover{
+  color: white;
+  background-color:  rgb(77, 77, 77);
+}
+.diaLast{
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.modal{
+  position: absolute;
+  width: auto;
+  padding: 30px;
+  background-color: #161616;
+  height:auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal > h2{
+  vertical-align: middle;
+}
+
+@media (max-width: 590px) {
+  .lists{
+    gap: 25px;
+  }
+  .loginbtn{
+    width: 100%;
+  }
+  .total{
+    position: static;
+    margin-bottom: 30px;
+  }
+  .categoryBtn{
+    position: static;
+    margin-bottom: 50px;
+  }
+  .outerBlock{
+    text-align: center;
+  }
+  .categorySec{
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .cartProdImg{
+    height: 90px;
+  }
+  .cartProdData> .cartProdTitle{
+    font-size: 0.9rem !important;
+  }
+  .cartProdData{
+    font-size: 0.7rem;
+  }
+  .amount>button{
+    padding: 5px !important;
+  }
+}
+@media (max-width: 380px){
+  .logo{
+    display: none;
+  }
+  .navbar{
+    justify-content: center;
+  }
+  .cartProdImg{
+    height: 60px;
+  }
+}
+@media (max-width: 960px){
+  .cartProdData> .cartProdDesc{
+    display: none;
+  }
+  .cartProdData> .cartProdTitle{
+    font-size: 1.3rem;
+  }
+  .amount > button{
+    padding-inline: 12px;
+    font-size: 1.2rem;
+  }
+  .cartCard> div{
+    gap: 20px;
+  }
+}
+@media (max-width: 330px){
+  .cartProdImg{
+    display: none;
+  }
+}
